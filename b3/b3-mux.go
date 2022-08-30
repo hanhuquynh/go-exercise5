@@ -1,4 +1,4 @@
-package b3
+package main
 
 import (
 	"fmt"
@@ -9,7 +9,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
-func Mux() {
+func main() {
 	r := mux.NewRouter()
 
 	r.HandleFunc("/", HomeHandler).Methods(http.MethodGet)

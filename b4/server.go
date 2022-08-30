@@ -47,9 +47,9 @@ func GetUser(w http.ResponseWriter, r *http.Request) {
 func PostUser(w http.ResponseWriter, r *http.Request) {
 	u := b5.User{
 		Id:          xid.New().String(),
-		UserId:      "5",
-		PartnerId:   "5",
-		AliasUserId: "5",
+		UserId:      "2",
+		PartnerId:   "2",
+		AliasUserId: "2",
 		Phone:       "0988776653",
 		Created:     time.Now().UnixMilli(),
 		Updated_at:  time.Now().UnixMilli(),

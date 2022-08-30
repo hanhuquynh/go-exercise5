@@ -23,20 +23,20 @@ func main() {
 
 	client := pb.NewUserServiceClient(cc)
 
-	insert(client)
+	// insert(client)
 	// read(client)
 	// update(client)
-	// delete(client)
+	delete(client)
 }
 
 func insert(client pb.UserServiceClient) {
 	req := &pb.InsertRequest{
 		User: &pb.UserPartner{
 			Id:          xid.New().String(),
-			UserId:      "4",
-			PartnerId:   "4",
-			AliasUserId: "4",
-			Phone:       "0988776654",
+			UserId:      "2",
+			PartnerId:   "2",
+			AliasUserId: "2",
+			Phone:       "0987654322",
 			Created:     time.Now().UnixMilli(),
 			UpdatedAt:   time.Now().UnixMilli(),
 		},
@@ -80,7 +80,7 @@ func update(client pb.UserServiceClient) {
 func delete(client pb.UserServiceClient) {
 	resp, err := client.Delete(context.Background(), &pb.DeleteRequest{
 		User: &pb.UserPartner{
-			UserId: "4",
+			UserId: "2",
 		},
 	})
 
