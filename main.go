@@ -13,7 +13,7 @@ var (
 
 func main() {
 	// rd.Bai6(conn, ctx)
-	// rd.Bai7(conn, ctx)
+	rd.Bai7(conn, ctx)
 	// b8.Gin()
 	// b9.Bai9()
 	//b9.B9Gin()
